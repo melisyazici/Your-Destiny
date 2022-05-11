@@ -13,10 +13,13 @@
 		152C92A32822933D003A8D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152C92A12822933D003A8D0F /* Main.storyboard */; };
 		152C92A52822933F003A8D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152C92A42822933F003A8D0F /* Assets.xcassets */; };
 		152C92A82822933F003A8D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152C92A62822933F003A8D0F /* LaunchScreen.storyboard */; };
+		152C92B4282298F5003A8D0F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C92B3282298F5003A8D0F /* Story.swift */; };
+		152C92B628229902003A8D0F /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C92B528229902003A8D0F /* StoryBrain.swift */; };
+		15370BA9282C69E1008F91A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15370BA8282C69E1008F91A9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		152C92982822933D003A8D0F /* YourDestiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourDestiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		152C92982822933D003A8D0F /* Your Destiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Your Destiny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		152C929B2822933D003A8D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		152C929D2822933D003A8D0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		152C929F2822933D003A8D0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		152C92A42822933F003A8D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		152C92A72822933F003A8D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152C92A92822933F003A8D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152C92B3282298F5003A8D0F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		152C92B528229902003A8D0F /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		15370BA8282C69E1008F91A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		152C928F2822933D003A8D0F = {
 			isa = PBXGroup;
 			children = (
+				15370BA8282C69E1008F91A9 /* README.md */,
 				152C929A2822933D003A8D0F /* YourDestiny */,
 				152C92992822933D003A8D0F /* Products */,
 			);
@@ -48,7 +55,7 @@
 		152C92992822933D003A8D0F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				152C92982822933D003A8D0F /* YourDestiny.app */,
+				152C92982822933D003A8D0F /* Your Destiny.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +65,9 @@
 			children = (
 				152C929B2822933D003A8D0F /* AppDelegate.swift */,
 				152C929D2822933D003A8D0F /* SceneDelegate.swift */,
-				152C929F2822933D003A8D0F /* ViewController.swift */,
-				152C92A12822933D003A8D0F /* Main.storyboard */,
+				152C92B0282298B7003A8D0F /* Model */,
+				152C92B1282298BD003A8D0F /* View */,
+				152C92B2282298C6003A8D0F /* Controller */,
 				152C92A42822933F003A8D0F /* Assets.xcassets */,
 				152C92A62822933F003A8D0F /* LaunchScreen.storyboard */,
 				152C92A92822933F003A8D0F /* Info.plist */,
@@ -67,12 +75,37 @@
 			path = YourDestiny;
 			sourceTree = "<group>";
 		};
+		152C92B0282298B7003A8D0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				152C92B3282298F5003A8D0F /* Story.swift */,
+				152C92B528229902003A8D0F /* StoryBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		152C92B1282298BD003A8D0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				152C92A12822933D003A8D0F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		152C92B2282298C6003A8D0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				152C929F2822933D003A8D0F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		152C92972822933D003A8D0F /* YourDestiny */ = {
+		152C92972822933D003A8D0F /* Your Destiny */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 152C92AC2822933F003A8D0F /* Build configuration list for PBXNativeTarget "YourDestiny" */;
+			buildConfigurationList = 152C92AC2822933F003A8D0F /* Build configuration list for PBXNativeTarget "Your Destiny" */;
 			buildPhases = (
 				152C92942822933D003A8D0F /* Sources */,
 				152C92952822933D003A8D0F /* Frameworks */,
@@ -82,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = YourDestiny;
+			name = "Your Destiny";
 			productName = YourDestiny;
-			productReference = 152C92982822933D003A8D0F /* YourDestiny.app */;
+			productReference = 152C92982822933D003A8D0F /* Your Destiny.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 152C92932822933D003A8D0F /* Build configuration list for PBXProject "YourDestiny" */;
+			buildConfigurationList = 152C92932822933D003A8D0F /* Build configuration list for PBXProject "Your Destiny" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				152C92972822933D003A8D0F /* YourDestiny */,
+				152C92972822933D003A8D0F /* Your Destiny */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +160,7 @@
 			files = (
 				152C92A82822933F003A8D0F /* LaunchScreen.storyboard in Resources */,
 				152C92A52822933F003A8D0F /* Assets.xcassets in Resources */,
+				15370BA9282C69E1008F91A9 /* README.md in Resources */,
 				152C92A32822933D003A8D0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152C92B628229902003A8D0F /* StoryBrain.swift in Sources */,
 				152C92A02822933D003A8D0F /* ViewController.swift in Sources */,
 				152C929C2822933D003A8D0F /* AppDelegate.swift in Sources */,
 				152C929E2822933D003A8D0F /* SceneDelegate.swift in Sources */,
+				152C92B4282298F5003A8D0F /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		152C92932822933D003A8D0F /* Build configuration list for PBXProject "YourDestiny" */ = {
+		152C92932822933D003A8D0F /* Build configuration list for PBXProject "Your Destiny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				152C92AA2822933F003A8D0F /* Debug */,
@@ -348,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		152C92AC2822933F003A8D0F /* Build configuration list for PBXNativeTarget "YourDestiny" */ = {
+		152C92AC2822933F003A8D0F /* Build configuration list for PBXNativeTarget "Your Destiny" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				152C92AD2822933F003A8D0F /* Debug */,
